@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSV Histogram Data</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        h1 {
+            color: #4CAF50;
+        }
+        .entry {
+            font-size: 18px;
+            margin: 5px 0;
+        }
+    </style>
+</head>
+<body>
+    <h1><%= columnName %> Data</h1>
+    <div>
+        <% if (histogram && Object.keys(histogram).length > 0) { %>
+            <% for (let [key, value] of Object.entries(histogram)) { %>
+                <div class="entry"><%= key %>: <%= value %> times</div>
+            <% } %>
+        <% } else { %>
+            <div class="entry">No data available for the selected column.</div>
+        <% } %>
+    </div>
+</body>
+</html>
