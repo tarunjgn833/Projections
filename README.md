@@ -8,7 +8,7 @@ This is a Node.js backend service that processes data and provides histogram fun
 - Node.js 20.9.0 and npm (for local deployment)
 
 ## Configuration
-Create a `.env` file in the root directory with the following variables (adjust as needed):
+Create a `.env` file in the root directory with the following variables (already provided for this project):
 ```
 PORT=3000
 DB_NAME=projections_db
@@ -80,6 +80,12 @@ Before you begin, ensure you have the following installed on your machine:
 
 - [Node.js](version 20.9.0 recommended)
 - [npm]
+
+- ## Configuration
+Create a `.env` file in the root directory with the following variables (already provided for this project):
+```
+VITE_API_URL=http://localhost:3000
+```
 
 ## Steps to Run
 
